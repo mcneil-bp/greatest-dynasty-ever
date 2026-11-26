@@ -74,7 +74,7 @@ function art(key, ratio, label, opt){
   const src = ART[key];
   if (src){
     return opt.video
-      ? '<video class="art" style="aspect-ratio:'+ratio+'" src="'+esc(src)+'" controls playsinline preload="metadata"></video>'
+      ? '<video class="art" style="aspect-ratio:'+ratio+'" src="'+esc(src)+'"'+(ART[key+"-poster"] ? ' poster="'+esc(ART[key+"-poster"])+'"' : '')+' controls playsinline preload="metadata"></video>'
       : '<img class="art" style="aspect-ratio:'+ratio+'" src="'+esc(src)+'" alt="'+esc(opt.alt || label)+'">';
   }
   const file = "art/" + key + (opt.video ? ".mp4" : ".jpg");
