@@ -12,6 +12,10 @@ Each issue also has a new section, **The Story**, styled like the existing story
 
 Manager portraits use the official full-size character art.
 
+## Weeks 1–10 archive
+
+Matchup art, covers (Weeks 6–9; Week 10 keeps the original cover), and **The Story** for Weeks 1–10 were loaded from a ChatGPT handoff. Every Story chronicle is an *archival reconstruction*, not a verbatim recovery of the originally posted recap. In `content/story.json` each is flagged with `"wN/story/reconstructed": true`. Character descriptions are in `docs/character-guide.md`; the official art in `art/managers/` wins over any description.
+
 ## Local preview
 
 From this folder:

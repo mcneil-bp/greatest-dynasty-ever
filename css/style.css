@@ -330,3 +330,6 @@ td.team .bdg{display:flex;width:fit-content;margin:4px 0 0}
 .k-story{flex:none;width:34px;text-align:center;color:var(--gold-lo);font-size:18px;line-height:1;border-bottom:1px dashed rgba(168,155,136,.6);padding-bottom:3px}
 .k-live{flex:none;width:34px;text-align:center;font-family:var(--cond);font-weight:700;font-size:16px;color:var(--gold-hi);font-variant-numeric:tabular-nums}
 .foot-meta{margin:16px 0 0}
+.chron{display:grid;gap:14px;max-width:62ch}
+.chron .lede{max-width:none}
+.chron-h{margin:10px 0 -4px;font-family:var(--display);font-weight:600;font-size:17px;line-height:1.25;letter-spacing:.04em;text-transform:uppercase;color:var(--gold)}

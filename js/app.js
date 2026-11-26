@@ -89,6 +89,13 @@ function story(key, label, tag, cls){
   if (t) return '<'+tag+' class="'+cls+'">'+esc(t)+'</'+tag+'>';
   return '<'+tag+' class="'+cls+' slot-story"><span>'+esc(label)+'</span></'+tag+'>';
 }
+function chronicle(key, label){
+  const t = STORY[key];
+  if (!t) return story(key, label, "p", "lede");
+  return '<div class="chron">' + String(t).split(/\n\n+/).map(b => /^## /.test(b)
+    ? '<h3 class="chron-h">'+esc(b.slice(3))+'</h3>'
+    : '<p class="lede">'+esc(b)+'</p>').join("") + '</div>';
+}
 const TEAM_FIELDS = [
   ["avatar","Avatar","Who this manager is in the saga, and how they look."],
   ["origin","Origin","How they entered the story."],
@@ -188,7 +195,7 @@ function viewIssue(w){
     + '</div></section>'
     + '<section class="sec"><h2 class="sec-h">Matchups</h2><div class="games">'+gs.map(gameCard).join("")+'</div></section>'
     + '<section class="sec"><h2 class="sec-h">Film of the week</h2><div class="film">'+art("w"+w+"/film", "16/9", "Film of the week", {video:true})+'</div></section>'
-    + '<section class="sec"><h2 class="sec-h">The Story</h2>'+story("w"+w+"/story", "The weekly chronicle. A longer recap of this week\'s chapter in the saga.", "p", "lede")+'</section>'
+    + '<section class="sec"><h2 class="sec-h">The Story</h2>'+chronicle("w"+w+"/story", "The weekly chronicle. A longer recap of this week\'s chapter in the saga.")+'</section>'
     + (latest && L.slate ? viewSlate() : '')
     + '<nav class="pager" aria-label="Other issues">'
     + (prev ? '<a class="btn" href="#week-'+(w-1)+'"><span aria-hidden="true">&larr;</span> Week '+(w-1)+'</a>' : '<span></span>')
@@ -396,7 +403,7 @@ document.getElementById("mast-sub").textContent = "Season " + L.season + " · Th
 
 /* ----- Router ----- */
 const app = document.getElementById("app"), mast = document.querySelector(".mast");
-const PROTO = '<p class="proto"><b>In progress</b>Scores are real, from Sleeper. Story runs through Week 10. Art for earlier weeks is still being added.</p>';
+const PROTO = '<p class="proto"><b>In progress</b>Scores are real, from Sleeper. Story and matchup art run through Week 10. Covers for Weeks 1&ndash;5 are still being added.</p>';
 let current = null;
 function render(h, scroll){
   h = String(h || "").replace(/^#/, "") || "issue";
