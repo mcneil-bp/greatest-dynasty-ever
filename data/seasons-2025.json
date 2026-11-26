@@ -1,0 +1,181 @@
+[
+  {
+    "year": 2025,
+    "playoffTeams": 6,
+    "champ": 4,
+    "plate": [
+      "2025",
+      "Sunday Scaries",
+      "JFalco11"
+    ],
+    "teams": [
+      {
+        "id": 1,
+        "name": "The Eternal Legion",
+        "w": 11,
+        "l": 3,
+        "pf": 1741.2,
+        "pa": 1462.22
+      },
+      {
+        "id": 2,
+        "name": "Go Go Bower Rangers!",
+        "w": 5,
+        "l": 9,
+        "pf": 1310.84,
+        "pa": 1518.68
+      },
+      {
+        "id": 3,
+        "name": "Sunday Executioners",
+        "w": 4,
+        "l": 10,
+        "pf": 1492.06,
+        "pa": 1705.98
+      },
+      {
+        "id": 4,
+        "name": "Sunday Scaries",
+        "w": 9,
+        "l": 5,
+        "pf": 1613.28,
+        "pa": 1490.82
+      },
+      {
+        "id": 5,
+        "name": "Team Casello",
+        "w": 6,
+        "l": 8,
+        "pf": 1465.44,
+        "pa": 1426.98
+      },
+      {
+        "id": 6,
+        "name": "Team PhilC123",
+        "w": 7,
+        "l": 7,
+        "pf": 1448.28,
+        "pa": 1411.72
+      },
+      {
+        "id": 7,
+        "name": "The Picklers",
+        "w": 9,
+        "l": 5,
+        "pf": 1565.34,
+        "pa": 1415.78
+      },
+      {
+        "id": 8,
+        "name": "Team laggy96",
+        "w": 10,
+        "l": 4,
+        "pf": 1671.04,
+        "pa": 1552.46
+      },
+      {
+        "id": 9,
+        "name": "ChatGPG",
+        "w": 6,
+        "l": 8,
+        "pf": 1531.32,
+        "pa": 1545.1
+      },
+      {
+        "id": 10,
+        "name": "Willing to Trade",
+        "w": 3,
+        "l": 11,
+        "pf": 1277.22,
+        "pa": 1586.28
+      }
+    ],
+    "playoffs": [
+      {
+        "round": "Round 1",
+        "week": 15,
+        "games": [
+          [
+            7,
+            135.52,
+            6,
+            63.52
+          ],
+          [
+            4,
+            159.62,
+            9,
+            92.7
+          ]
+        ]
+      },
+      {
+        "round": "Semifinals",
+        "week": 16,
+        "games": [
+          [
+            7,
+            176.88,
+            1,
+            125.9
+          ],
+          [
+            4,
+            151.3,
+            8,
+            114.5
+          ]
+        ]
+      },
+      {
+        "round": "Championship",
+        "week": 17,
+        "final": true,
+        "games": [
+          [
+            4,
+            121.48,
+            7,
+            82.16
+          ]
+        ]
+      },
+      {
+        "round": "Third place",
+        "week": 17,
+        "games": [
+          [
+            8,
+            107.94,
+            1,
+            98.82
+          ]
+        ]
+      },
+      {
+        "round": "Fifth place",
+        "week": 16,
+        "games": [
+          [
+            9,
+            117.06,
+            6,
+            76.32
+          ]
+        ]
+      }
+    ],
+    "finish": [
+      4,
+      7,
+      8,
+      1,
+      9,
+      6,
+      5,
+      2,
+      3,
+      10
+    ]
+  }
+]
