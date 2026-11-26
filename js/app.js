@@ -403,7 +403,7 @@ document.getElementById("mast-sub").textContent = "Season " + L.season + " · Th
 
 /* ----- Router ----- */
 const app = document.getElementById("app"), mast = document.querySelector(".mast");
-const PROTO = '<p class="proto"><b>In progress</b>Scores are real, from Sleeper. Story and matchup art run through Week 10. Covers for Weeks 1&ndash;5 are still being added.</p>';
+const PROTO = '<p class="proto"><b>In progress</b>Scores are real, from Sleeper. Story and matchup art run through Week 11. Covers for Weeks 1&ndash;5 are still being added.</p>';
 let current = null;
 function render(h, scroll){
   h = String(h || "").replace(/^#/, "") || "issue";
